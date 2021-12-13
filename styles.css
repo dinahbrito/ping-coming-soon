@@ -122,6 +122,14 @@ i {
     width: 1.94rem;
 }
 
+.circle:hover {
+    background-color:rgba(76, 123, 243, 1);
+}
+
+.circle:hover i{
+    color: white;
+}
+
 .copyright {
     color: #969696;
     font-size: .625rem;
@@ -184,8 +192,9 @@ i {
         max-width: 12.75rem;
     }
     .social-icons {
-        width: 7.5rem;
         margin: 0 auto 1.56rem auto;
+        justify-content: space-between;
+        width: 7.5rem;
     }
     .copyright {
         font-size: .75rem;
