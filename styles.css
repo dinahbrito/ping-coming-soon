@@ -23,7 +23,7 @@ h1 {
     line-height: 2rem;
 }
 
-h1 span {
+span {
     color: #15202A;
     font-weight: 700;
 }
@@ -32,7 +32,9 @@ h1 span {
 
 body {
     background-color: #FFFFFF;
+    color: #15202A;
     font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
 }
 
 main {
@@ -46,5 +48,106 @@ main {
 header img {
     margin: 0 auto;
     width: 3.5rem;
+    margin-bottom: 2rem;
 }
 
+.cta p {
+    font-size: .75rem;
+    line-height: .94rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+input {
+    border: 1px solid rgba(194,211,255,1);
+    box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.0001);
+    color: rgba(184, 199,237,1);
+    font-size: .75rem;
+    line-height: 1.25rem;
+    padding: .63rem 2rem;
+}
+
+button {
+    background-color: rgba(76, 123, 243, 1);
+    border: none;
+    box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.230414);
+    color: #FFFFFF;
+    padding: .75rem 0;
+    margin-top: .63rem;
+}
+
+input, button {
+    border-radius: 28px;
+    width: 100%;
+}
+
+form  {
+    margin-bottom: 4.5rem;
+}
+
+.illustration {
+    margin-bottom: 7.5rem;
+}
+
+footer {
+    max-width: 10.625rem;
+    margin: 0 auto;
+}
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1.69rem;
+}
+
+i {
+    color:rgba(76, 123, 243, 1);
+}
+
+.circle {
+    align-items: center;
+    border: .92px solid rgba(76, 123, 243, .15);
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    height: 1.94rem;
+    width: 1.94rem;
+}
+
+.copyright {
+    color: #969696;
+    font-size: .625rem;
+    line-height: .75rem;
+}
+
+@media only screen and (min-width: 768px){
+    body {
+        height: 100vh;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    
+  
+
+    input, button {
+        height: 3.5rem;
+    }
+
+    input {
+        width: 26.31rem;
+    }
+
+    button {
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.21rem;
+        width: 12.5rem;
+        padding: 1.13rem;
+    }
+
+    .illustration {
+        max-width: 40rem;
+    }
+}
