@@ -1,0 +1,50 @@
+/* Reset */
+*,
+* ::before,
+* ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+h1 {
+    color: #969696;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+h1 span {
+    color: #15202A;
+    font-weight: 700;
+}
+
+/* Mobile first styling */
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+main {
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    padding: 5.06rem 2.25rem 2.25rem 2.25rem;
+    text-align: center;
+}
+
+header img {
+    margin: 0 auto;
+    width: 3.5rem;
+}
+
