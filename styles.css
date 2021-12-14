@@ -41,7 +41,8 @@ main {
     align-items: center;
     display: grid;
     justify-content: center;
-    padding: 5.06rem 2.25rem 2.25rem 2.25rem;
+    max-width: 20rem;
+    margin: 5.065rem auto 2.31rem auto;
     text-align: center;
 }
 
@@ -88,6 +89,7 @@ input, button {
 
 form  {
     margin-bottom: 4.5rem;
+    display: grid;
 }
 
 .error {
@@ -149,8 +151,7 @@ i {
     }
 
     main {
-        padding: 0;
-        
+        max-width: 44.5rem; 
     }
 
     header img {
@@ -165,6 +166,34 @@ i {
 
     form {
         margin-bottom: 5.875rem;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 2fr 1fr;
+        justify-content: center;
+        align-items: start;
+        max-width: 637px;
+        height: 82px;
+    }
+
+    button {
+        margin-top: 0;
+    }
+
+    .input-wrapper {
+        display: grid;
+        align-self: baseline;
+        height: 3.5rem;
+    }
+    
+    form small {
+        color: #FF5466;
+        font-size: .75rem;
+        font-style: italic;
+        font-weight: 400;
+        letter-spacing: .15px;
+        margin-left: 1.875rem;
+        margin-top: .375rem;
+        text-align: left;
     }
 
     input, button {
