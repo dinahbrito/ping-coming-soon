@@ -16,8 +16,20 @@ function checkEmail()
         setErrorFor(email, 'Please provide a valid email address');
     } else if (!validEmail(emailValue)) {
         setErrorFor(email, 'Not a valid email');
+    } else if (validEmail(emailValue)) {
+        removeError(email, 'Thanks for signing up!');
     }
 }
+
+function removeError(input, message)
+{
+    const inputWrapper = input.parentElement;
+    const small = inputWrapper.querySelector('small');
+    small.style.color = 'green';
+    small.innerText = message;
+    inputWrapper.className = 'input-wrapper';
+}
+
 function setErrorFor(input, message)
 {
     const inputWrapper = input.parentElement; //.input-wrapper
