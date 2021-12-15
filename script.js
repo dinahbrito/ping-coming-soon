@@ -14,9 +14,9 @@ function checkEmail()
     const emailValue = email.value;
 
     if (emailValue === '') {
-        // show error message
-        // add error class
-        setErrorFor(email, 'Please provide a valid email address')
+        setErrorFor(email, 'Please provide a valid email address');
+    } else if (!validEmail(emailValue)) {
+        setErrorFor(email, 'Email is not valid');
     }
 }
 
@@ -31,3 +31,13 @@ function setErrorFor(input, message)
     inputWrapper.className = 'input-wrapper error';
 
 }
+
+
+function validEmail(email)
+{
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+// test validEmail
+console.log(validEmail('user@email.com')); // true
+console.log(validEmail('adasdfasf@')); //false
