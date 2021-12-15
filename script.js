@@ -10,16 +10,14 @@ form.addEventListener('submit', (e) =>
 
 function checkEmail()
 {
-    //get value from input
     const emailValue = email.value;
 
     if (emailValue === '') {
         setErrorFor(email, 'Please provide a valid email address');
     } else if (!validEmail(emailValue)) {
-        setErrorFor(email, 'Email is not valid');
+        setErrorFor(email, 'Not a valid email');
     }
 }
-
 function setErrorFor(input, message)
 {
     const inputWrapper = input.parentElement; //.input-wrapper
@@ -31,7 +29,6 @@ function setErrorFor(input, message)
     inputWrapper.className = 'input-wrapper error';
 
 }
-
 
 function validEmail(email)
 {
