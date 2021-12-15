@@ -13,9 +13,9 @@ function checkEmail()
     const emailValue = email.value;
 
     if (emailValue === '') {
-        setErrorFor(email, 'Please provide a valid email address');
+        setErrorFor(email, 'Whoops! It looks like you forgot to add your email');
     } else if (!validEmail(emailValue)) {
-        setErrorFor(email, 'Not a valid email');
+        setErrorFor(email, 'Please provide a valid email address');
     } else if (validEmail(emailValue)) {
         removeError(email, 'Thanks for subscribing!');
     }
