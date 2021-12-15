@@ -87,12 +87,12 @@ input, button {
     width: 100%;
 }
 
-form  {
+.form  {
     margin-bottom: 4.5rem;
     display: grid;
 }
 
-.error {
+.error input {
     border: 1px solid #FF5466;
 }
 
@@ -164,7 +164,7 @@ i {
         margin-bottom: 2.5rem;
     }
 
-    form {
+    .form {
         margin-bottom: 5.875rem;
         display: grid;
         grid-gap: 1rem;
@@ -185,7 +185,7 @@ i {
         height: 3.5rem;
     }
     
-    form small {
+    .input-wrapper small {
         color: #FF5466;
         font-size: .75rem;
         font-style: italic;
