@@ -17,7 +17,7 @@ function checkEmail()
     } else if (!validEmail(emailValue)) {
         setErrorFor(email, 'Not a valid email');
     } else if (validEmail(emailValue)) {
-        removeError(email, 'Thanks for signing up!');
+        removeError(email, 'Thanks for subscribing!');
     }
 }
 

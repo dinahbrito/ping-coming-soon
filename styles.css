@@ -159,6 +159,7 @@ i {
 
     header img {
         width: 5.63rem;
+        margin-bottom: 3rem;
     }
 
     .cta p {
@@ -168,7 +169,7 @@ i {
     }
 
     .form {
-        margin-bottom: 5.875rem;
+        margin-bottom: 3.9rem;
         display: grid;
         grid-gap: 1rem;
         grid-template-columns: 2fr 1fr;
